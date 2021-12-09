@@ -9,7 +9,12 @@
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
   border: 1px solid red;
+  display: block;
 }
+
+div {
+  border: 1px solid red;
+  }
 
 .header {
   height: 100vh;
@@ -17,59 +22,72 @@
   max-height: 756px;
   background-color: #f2f2f2;
   display: flex;
-  border: 1px solid red;
-  margin: auto;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
   /* выше установили ограничения для секции */
 }
 
-.logo_place_header {
+.logo {
   width:183px;
   height:32px;
-  background-image: url(/images/logo_place_header.svg);
-  background-position: center;
-  background-size: cover;
 }
 
-.header__logo_position_absolute {
+.logo_place_header {
   position: absolute;
   left: 64px;
   top: 30px;
+  background-image: url(../images/logo_place_header.svg);
 }
 
 .header__title {
- flex-direction: row;
- width: 730px;
-
+  width: 730px;
+  display: flex;
+  margin-left: 64px;
+  align-self: center;
 }
 
 .header__text {
-  font-size: large;
-  font:
+  font-size: 102px;
+  line-height: 96px;
 }
 
 .header__subtitle {
- width: 388px;
+  display: block;
+  width: 388px;
+  position: absolute;
+  left: 64px;
+  bottom: 30px;
+  font-size: 18px;
+  line-height: 25px;
 }
 
 .header__link {
-
+  font-size: 18px;
+  line-height: 25px;
 }
 
 .header__main-illustration {
- width: 765px;
- height: 608px;
- position: absolute;
- right: 0;
- bottom: 0;
- background-image: url(/images/header-image.png);
- background-position: center;
- background-size: cover;
+  width: 765px;
+  height: 608px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-image: url(../images/header-image.png);
+  background-size: cover;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
   width: 568px;
+  border: 2px solid blue;
+  background-color: blue;
+  position: absolute;
+  right: 0;
+  top: 64px;
+  z-index: 0;
 }
 
 /* и элемента с модификатором вида ключ-значение */
