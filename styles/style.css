@@ -105,19 +105,20 @@
 }
 
 .two-columns__brief {
+  margin: 0;
   width: 175px;
-  display: inline-block;
   line-height: 1.2;
   font-size: 18px;
   color: #2f80ed;
   font-weight: normal;
   border: 1px solid red;
-
 }
 
 .two-columns__main-text {
+  margin: 0;
   min-width: 784px;
   display: inline-flex;
+  flex-basis: 80%;
   flex-direction: column;
   justify-content: space-between;
   border: 1px solid red;
@@ -125,6 +126,8 @@
 }
 
 .two-columns__paragraph {
+  margin-top: 0;
+  margin-bottom: 30px;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
