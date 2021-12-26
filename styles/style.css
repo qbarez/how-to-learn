@@ -37,9 +37,6 @@
   margin-left: 64px;
   align-self: center;
   z-index: 2;
-}
-
-.header__text {
   font-size: 102px;
   line-height: 96px;
 }
@@ -70,7 +67,6 @@
   right: 0;
   bottom: 0;
   z-index: 1;
-  background-image: url(../images/header-image.png);
   background-size: cover;
 }
 
@@ -158,6 +154,10 @@
 }
 
 .table {
+  list-style-type: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
   width: 1100px;
   margin: 0 auto 100px;
   display: flex;
@@ -223,7 +223,6 @@
   text-decoration: none;
 }
 
-
 .kaufman {
   padding: 90px 0 90px;
   background-color: #1f1f1f;
@@ -231,20 +230,22 @@
   overflow: hidden;
 }
 
-.section-title_theme_dark {
-  color: #f2f2f2;
-  margin: 0 auto 20px;
-  width: 60%;
-  line-height: 1.15;
-  font-size: 60px;
-  font-weight: bold;
-  text-align: center;
-  position: relative;
-  z-index: 1;
+.section-title {
+margin: 0 auto 20px;
+width: 60%;
+line-height: 1.15;
+font-size: 60px;
+font-weight: bold;
+text-align: center;
+position: relative;
+z-index: 1;
 }
 
-.section-subtitle_theme_dark {
+.section-title_theme_dark {
   color: #f2f2f2;
+}
+
+.section-subtitle{
   margin: 0 auto;
   width: 60%;
   line-height: 34px;
@@ -255,15 +256,15 @@
   z-index: 1;
 }
 
+.section-subtitle_theme_dark {
+  color: #f2f2f2;
+}
+
 .table_theme_dark {
-  width: 1100px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  color: #f2f2f2;
   position: relative;
   z-index: 1;
+  margin: 0 auto 90px;
 }
 
 .table__cell_theme_dark {
@@ -275,16 +276,10 @@
 .table__heading_theme_dark {
   color: #f2f2f2;
   margin-bottom: 20px;
-  line-height: 1.15;
-  font-size: 24px;
-  font-weight: bold;
 }
 
 .table__text_theme_dark {
   color: #f2f2f2;
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
 }
 
 .kaufman__triangle {
@@ -314,17 +309,17 @@
   margin: 0 auto;
 }
 
-.footer_column_content_copyright {
+.footer__column {
   display: flex;
-  flex-basis: 711px;
   flex-direction: column;
+}
+
+.footer__column_content_copyright {
+  flex-basis: 711px;
   justify-content: space-between;
 }
 
 .logo_place_footer {
-  width:183px;
-  height:35px;
-  background: no-repeat;
   background-image: url(../images/logo_place_footer.svg);
 }
 
@@ -338,20 +333,17 @@
 }
 
 .footer__column_content_info {
-  display: flex;
-  flex-direction: column;
+  color: #f2f2f2;
 }
 
 .footer__column-heading {
   margin: 0  0 20px;
-  color: #f2f2f2;
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
 }
 
 .footer__column-links {
-  color: #f2f2f2;
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
@@ -363,8 +355,7 @@
 }
 
 .footer__column_content_social {
-  display: flex;
-  flex-direction: column;
+  color: #f2f2f2;
 }
 
 .footer__social-icon {
@@ -374,6 +365,6 @@
 }
 
 .footer__column-link {
-  color: #f2f2f2;
   text-decoration: none;
+  color: #f2f2f2;
 }
