@@ -157,7 +157,6 @@
   list-style-type: none;
   list-style: none;
   padding: 0;
-  margin: 0;
   width: 1100px;
   margin: 0 auto 100px;
   display: flex;
@@ -230,34 +229,17 @@
   overflow: hidden;
 }
 
-.section-title {
-margin: 0 auto 20px;
-width: 60%;
-line-height: 1.15;
-font-size: 60px;
-font-weight: bold;
-text-align: center;
-position: relative;
-z-index: 1;
-}
-
 .section-title_theme_dark {
   color: #f2f2f2;
-}
-
-.section-subtitle{
-  margin: 0 auto;
-  width: 60%;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-  text-align: center;
+  margin: 0 auto 20px;
   position: relative;
   z-index: 1;
 }
 
 .section-subtitle_theme_dark {
   color: #f2f2f2;
+  position: relative;
+  z-index: 1;
 }
 
 .table_theme_dark {
