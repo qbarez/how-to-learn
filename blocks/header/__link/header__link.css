@@ -7,4 +7,5 @@
 
 .header__link:hover {
   opacity: 50%;
+  transition: 1s;
 }
